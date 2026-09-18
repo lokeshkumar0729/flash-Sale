@@ -1,105 +1,46 @@
-⚡ FlashSale — Modern Full-Stack E-Commerce Platform
+⚡ FlashSale
 
-<p align="center">
-  <strong>A modern, responsive e-commerce platform built with React and designed with a production-oriented architecture.</strong>
-</p>
+A modern, responsive e-commerce frontend built with React + Vite, featuring customer shopping flows and an admin product management dashboard.
 
-<p align="center">
-  <a href="https://flash-sale-gamma.vercel.app/login">🌐 Live Demo</a>
-  •
-  <a href="#-features">Features</a>
-  •
-  <a href="#-tech-stack">Tech Stack</a>
-  •
-  <a href="#-project-structure">Project Structure</a>
-</p>
+🌐 Live Demo: https://flash-sale-gamma.vercel.app/login
 
-🌐 Live Demo
+Frontend is complete. Spring Boot + MySQL backend integration is the next phase.
 
-Try FlashSale:
-https://flash-sale-gamma.vercel.app/login
+✨ Features
 
-The current live deployment showcases the completed React frontend. Backend integration with Spring Boot, JWT authentication, and MySQL is planned as the next development phase.
+Customer
 
-📖 About The Project
+🔐 Login & Signup
 
-FlashSale is a modern e-commerce web application created to simulate a real-world online shopping platform.
+🏠 Responsive home page
 
-The project focuses on building a clean and responsive user experience while following scalable frontend architecture and reusable component patterns.
-
-It includes two major experiences:
-
-🛒 Customer Shopping Experience
-
-🛠️ Admin Product Management Experience
-
-The frontend currently uses mock data and React Context for application state. The next phase will connect the application to a Java Spring Boot REST API with MySQL, Spring Security, and JWT-based authentication.
-
-✨ Key Features
-
-🛍️ Customer Experience
-
-🔐 Login and Signup
-
-🏠 Modern e-commerce homepage
-
-🔎 Product search interface
-
-🗂️ Product category navigation
-
-🛒 Add to cart
-
-➕➖ Cart quantity management
-
-💰 Price, discount and savings calculation
-
-❤️ Wishlist management
+🔎 Product search & categories
 
 📦 Product details
 
-🧾 Checkout flow
+🛒 Cart & quantity management
 
-📍 Delivery address form
+❤️ Wishlist
 
-💳 Multiple payment method UI
+💳 Checkout & payment UI
+
+📍 Delivery address
 
 ✅ Order placement
 
-📋 Order history
-
-🔍 Detailed order view
+📋 Order history & details
 
 🚚 Order status tracking
 
-👤 Customer profile
+👤 Profile & logout
 
-🔒 Protected customer routes
+🔒 Protected routes
 
-📱 Responsive mobile experience
+Admin
 
-🛠️ Admin Experience
+📊 Dashboard with statistics & charts
 
-📊 Admin dashboard
-
-💵 Revenue overview
-
-📦 Order statistics
-
-🛍️ Product statistics
-
-👥 User statistics
-
-📈 Sales visualization
-
-📊 Order status visualization
-
-🧾 Recent orders
-
-🔥 Top products
-
-🔎 Product search
-
-🗂️ Category filtering
+📦 Product management
 
 ➕ Add products
 
@@ -107,51 +48,23 @@ The frontend currently uses mock data and React Context for application state. T
 
 🗑️ Delete products
 
-📱 Responsive admin interface
+🔎 Search & category filtering
 
-🎨 UI & Design
-
-FlashSale follows a clean SaaS-style e-commerce interface with:
-
-Responsive layouts
-
-Reusable UI components
-
-Consistent spacing and typography
-
-Modern cards and dashboards
-
-Interactive hover states
-
-Responsive navigation
-
-Mobile-friendly layouts
-
-Clear visual hierarchy
-
-Customer and admin-specific interfaces
-
-The interface is designed to work across:
-
-Desktop
-Tablet
-Mobile
+📱 Responsive admin UI
 
 🧰 Tech Stack
 
-Frontend
-
 Technology
 
-Purpose
+Usage
 
 React
 
-UI development
+Frontend UI
 
 Vite
 
-Development & build tooling
+Build tool
 
 JavaScript
 
@@ -159,121 +72,42 @@ Application logic
 
 React Router
 
-Client-side routing
+Routing
 
 Context API
 
-Global state management
+Global state
 
 Tailwind CSS
 
-Responsive styling
+Styling & responsive UI
 
 Axios
 
-HTTP client
+API communication
 
 Lucide React
 
-UI icons
+Icons
 
 Recharts
 
-Admin dashboard charts
+Admin charts
+
+Vercel
+
+Frontend deployment
 
 Planned Backend
 
-Technology
-
-Purpose
-
-Java 21
-
-Backend development
-
-Spring Boot
-
-REST API development
-
-Spring Security
-
-Authentication & authorization
-
-JWT
-
-Token-based authentication
-
-BCrypt
-
-Password hashing
-
-Spring Data JPA
-
-Data access
-
-Hibernate
-
-ORM
-
-MySQL
-
-Relational database
-
-🏗️ Application Architecture
-
-The frontend is organized into reusable layers:
-
-React UI
-   │
-   ├── Pages
-   │
-   ├── Components
-   │
-   ├── Context
-   │
-   ├── Hooks
-   │
-   ├── Services
-   │
-   └── Utilities
-
-The planned full-stack architecture:
-
-┌─────────────────────────────┐
-│        React Frontend       │
-│                             │
-│ Pages • Components • State  │
-└──────────────┬──────────────┘
-               │
-               │ REST API / Axios
-               ▼
-┌─────────────────────────────┐
-│       Spring Boot API       │
-│                             │
-│ Controller → Service        │
-│      → Repository            │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│           MySQL             │
-│                             │
-│ Users • Products • Orders   │
-│ Cart • Wishlist • Categories│
-└─────────────────────────────┘
+Java 21 · Spring Boot · Spring Security · JWT · BCrypt · Spring Data JPA · Hibernate · MySQL · REST APIs
 
 📁 Project Structure
 
 flashsale/
-│
 ├── public/
-│
 ├── src/
-│   │
 │   ├── assets/
-│   │   ├── images/
-│   │   └── icons/
-│   │
 │   ├── components/
 │   │   ├── common/
 │   │   ├── layout/
@@ -282,223 +116,71 @@ flashsale/
 │   │   ├── checkout/
 │   │   ├── order/
 │   │   └── admin/
-│   │
 │   ├── context/
-│   │   ├── AuthContext.jsx
-│   │   ├── CartContext.jsx
-│   │   ├── OrderContext.jsx
-│   │   └── WishlistContext.jsx
-│   │
 │   ├── data/
-│   │   └── products.js
-│   │
 │   ├── hooks/
-│   │
 │   ├── pages/
 │   │   ├── auth/
 │   │   ├── customer/
 │   │   └── admin/
-│   │
 │   ├── services/
-│   │
 │   ├── utils/
-│   │
 │   ├── App.jsx
 │   ├── main.jsx
 │   └── index.css
-│
 ├── index.html
 ├── package.json
 ├── vite.config.js
 └── README.md
 
-🧭 Main Application Routes
+🧭 Main Routes
 
-Customer Routes
+Customer
 
-Route
+/login · /signup · /home · /products/:productId · /cart · /checkout · /orders · /orders/:orderId · /wishlist · /profile
 
-Purpose
+Admin
 
-/login
+/admin · /admin/products
 
-User authentication
+🔄 Shopping Flow
 
-/signup
+Login → Home → Product → Cart → Checkout → Order
+                                      ↓
+                              Order History
 
-User registration
+🧠 State Management
 
-/home
+FlashSale uses React Context API for shared application state:
 
-Main shopping dashboard
+AuthContext     → Authentication & user
+CartContext     → Cart & pricing
+WishlistContext → Wishlist
+OrderContext    → Orders
 
-/products/:productId
+🔐 Security
 
-Product details
+Current Frontend
 
-/cart
+Protected customer routes
 
-Shopping cart
+Authentication state through Context API
 
-/checkout
+Planned Backend
 
-Checkout
-
-/orders
-
-Order history
-
-/orders/:orderId
-
-Order details
-
-/wishlist
-
-Saved products
-
-/profile
-
-Customer profile
-
-Admin Routes
-
-Route
-
-Purpose
-
-/admin
-
-Admin dashboard
-
-/admin/products
-
-Product management
-
-🔄 Customer Shopping Flow
-
-           Login / Signup
-                 │
-                 ▼
-              Home
-                 │
-        ┌────────┴────────┐
-        ▼                 ▼
-     Browse           Categories
-     Products
-        │
-        ▼
- Product Details
-        │
-        ▼
-   Add to Cart
-        │
-        ▼
-       Cart
-        │
-        ▼
-    Checkout
-        │
-        ▼
-  Place Order
-        │
-        ▼
-Order Confirmation
-        │
-        ▼
- Order History
-        │
-        ▼
- Order Details
-
-🛡️ Security Architecture — Planned
-
-The current frontend provides client-side protected routes for the UI experience.
-
-The production authentication layer will be implemented in the Spring Boot backend using:
-
-User Registration
-       ↓
+Spring Security
+      ↓
+JWT Authentication
+      ↓
 BCrypt Password Hashing
-       ↓
-Login
-       ↓
-JWT Access Token
-       ↓
-Protected REST APIs
-       ↓
-Role-Based Authorization
+      ↓
+Role-Based Access
+      ↓
+CUSTOMER / ADMIN
 
-Planned Roles
+🚀 Run Locally
 
-CUSTOMER
-ADMIN
-
-Planned Security Features
-
-JWT authentication
-
-Refresh token mechanism
-
-BCrypt password hashing
-
-Protected REST endpoints
-
-Role-based authorization
-
-Admin-only product operations
-
-Customer-specific resources
-
-📊 State Management
-
-FlashSale currently uses React Context API for application-wide state.
-
-Authentication
-
-AuthContext
-    │
-    ├── user
-    ├── isAuthenticated
-    ├── login()
-    ├── logout()
-    └── updateProfile()
-
-Cart
-
-CartContext
-    │
-    ├── cartItems
-    ├── cartCount
-    ├── subtotal
-    ├── savings
-    ├── deliveryCharge
-    ├── total
-    ├── addToCart()
-    ├── updateQuantity()
-    └── removeFromCart()
-
-Orders
-
-OrderContext
-    │
-    ├── orders
-    ├── addOrder()
-    └── getOrderById()
-
-Wishlist
-
-WishlistContext
-    │
-    ├── wishlistItems
-    ├── wishlistCount
-    ├── toggleWishlist()
-    └── removeFromWishlist()
-
-🚀 Getting Started
-
-Prerequisites
-
-Make sure you have installed:
+Requirements
 
 Node.js
 
@@ -506,236 +188,47 @@ npm
 
 Git
 
-1. Clone the repository
+Installation
 
 git clone https://github.com/your-username/flashsale.git
-
-2. Open the project
-
 cd flashsale
-
-3. Install dependencies
-
 npm install
-
-4. Start the development server
-
 npm run dev
 
-Vite will display the local development URL in the terminal.
-
-📦 Production Build
-
-Build the application:
+Production Build
 
 npm run build
-
-Preview the production build:
-
 npm run preview
 
-🧪 Current Development Status
+📌 Project Status
 
-Frontend
-████████████████████  100%
+Module                               Status
+         
+React Frontend                      ✅ Complete
 
-Backend
-░░░░░░░░░░░░░░░░░░░░    0%
+Customer Features                   ✅ Complete
 
-Database
-░░░░░░░░░░░░░░░░░░░░    0%
+Admin Dashboard                     ✅ Complete
 
-API Integration
-░░░░░░░░░░░░░░░░░░░░    0%
+Product Management                  ✅ Complete
 
-Completed
+Responsive UI                       ✅ Complete
 
-React project setup
+Vercel Deployment                   ✅ Live
 
-Responsive customer UI
+Spring Boot Backend                🔜 Planned
 
-Authentication UI
+MySQL Database                     🔜 Planned
 
-Product browsing
+JWT Authentication                 🔜 Planned
 
-Product details
-
-Cart
-
-Checkout
-
-Orders
-
-Wishlist
-
-Profile
-
-Customer route protection
-
-Admin dashboard
-
-Admin product management
-
-Responsive layouts
-
-Production build
-
-Vercel deployment
-
-Next
-
-Spring Boot backend
-
-MySQL database
-
-User API
-
-Product API
-
-Cart API
-
-Wishlist API
-
-Order API
-
-JWT authentication
-
-Refresh tokens
-
-Role-based authorization
-
-React ↔ Spring Boot integration
-
-Production deployment of backend
-
-🔮 Future Enhancements
-
-Planned improvements include:
-
-Real-time inventory management
-
-Product image upload
-
-Advanced product filtering
-
-Pagination
-
-Search optimization
-
-Payment gateway integration
-
-Email notifications
-
-Order cancellation and returns
-
-Admin user management
-
-Analytics dashboard
-
-Cloud deployment
-
-Automated testing
-
-API documentation with Swagger/OpenAPI
-
-💡 Why This Project?
-
-FlashSale is designed as more than a basic CRUD project.
-
-The project demonstrates practical software engineering concepts such as:
-
-Component-based architecture
-
-Reusable UI design
-
-Client-side routing
-
-Global state management
-
-Protected application routes
-
-E-commerce workflows
-
-Admin workflows
-
-REST API architecture
-
-Authentication and authorization design
-
-Database-driven application planning
-
-Responsive frontend development
-
-📸 Screenshots
-
-Add screenshots of the following sections to make the GitHub repository more visual:
-
-docs/
-├── login.png
-├── home.png
-├── product-details.png
-├── cart.png
-├── checkout.png
-├── orders.png
-├── wishlist.png
-├── admin-dashboard.png
-└── admin-products.png
-
-Then they can be displayed in this README.
-
-🌐 Deployment
-
-Frontend
-
-The current frontend is deployed using Vercel.
-
-Live Application:
-https://flash-sale-gamma.vercel.app/login
-
-Planned Deployment Architecture
-
-                 ┌───────────────┐
-                 │    Vercel     │
-                 │ React Client  │
-                 └───────┬───────┘
-                         │
-                       HTTPS
-                         │
-                         ▼
-                 ┌───────────────┐
-                 │ Spring Boot   │
-                 │ REST API      │
-                 └───────┬───────┘
-                         │
-                         ▼
-                 ┌───────────────┐
-                 │     MySQL     │
-                 │   Database    │
-                 └───────────────┘
+API Integration                    🔜 Planned
 
 👨‍💻 Author
 
 Lokesh Kumar
+Computer Science & Engineering Student · Aspiring Software Engineer / Full-Stack Java Developer
 
-Computer Science & Engineering Student
-Aspiring Software Engineer | Full-Stack Java Developer
+Skills: Java · Spring Boot · Spring Security · REST APIs · SQL · React · JavaScript · Tailwind CSS
 
-Core Skills
-
-Java
-Spring Boot
-Spring Security
-REST APIs
-SQL
-React
-JavaScript
-Tailwind CSS
-Git & GitHub
-
-⭐ Project
-
-If you find FlashSale interesting, consider giving the repository a ⭐ on GitHub.
-
-<p align="center">
-  Built with ❤️ using React, JavaScript and Tailwind CSS
-</p>
+⭐ If you find the project useful, consider starring the repository.
