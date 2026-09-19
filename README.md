@@ -10,6 +10,13 @@
 
 ---
 
+## 🌐 Live Demo
+
+**Frontend:** [FlashSale](https://flash-sale-gamma.vercel.app/login)
+
+> The frontend is deployed on Vercel. Backend integration is currently under development.
+
+---
 ## 📌 Overview
 
 FlashSale is a full-stack e-commerce application designed around a modern customer shopping experience and a production-oriented backend architecture.
@@ -309,14 +316,6 @@ Screenshots and feature demonstrations will be added as the application reaches 
 ### Backend API
 
 *Coming soon*
-
----
-
-## 🌐 Live Demo
-
-**Frontend:** [FlashSale](https://flash-sale-gamma.vercel.app/login)
-
-> The frontend is deployed on Vercel. Backend integration is currently under development.
 
 ---
 
